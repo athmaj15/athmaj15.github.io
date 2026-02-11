@@ -1,38 +1,63 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
+  background: #f2f6ff;
 }
 
 header {
-  background-color: #2b6cff;
+  background: linear-gradient(135deg, #2b6cff, #5f8dff);
   color: white;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
+}
+
+header img {
+  width: 80px;
+  margin-bottom: 10px;
 }
 
 nav {
   background: white;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a {
   margin: 10px;
   text-decoration: none;
   color: #2b6cff;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 section {
-  background: white;
-  margin: 15px;
   padding: 20px;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card a {
+  text-decoration: none;
+  color: #2b6cff;
+  font-weight: bold;
+}
+
 footer {
-  background: #222;
+  background: #111;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  margin-top: 30px;
 }
