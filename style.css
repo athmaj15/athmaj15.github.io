@@ -23,6 +23,15 @@ nav {
   background: rgba(255,255,255,0.05);
 }
 
+.logo {
+  width: 220px;
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 15px;
+}
+
 nav a {
   color: white;
   text-decoration: none;
