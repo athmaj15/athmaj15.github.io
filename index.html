@@ -1,109 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exclusive Study materials</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DigitalHub Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    background:#111827;
+}
+
+nav a{
+    color:#38bdf8;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.container{
+    padding:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:20px;
+    margin:10px 0;
+    color:#22c55e;
+}
+
+button{
+    background:#38bdf8;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+button:hover{
+    background:#0ea5e9;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1e293b;
+    margin-top:40px;
+}
+</style>
 </head>
 
 <body>
 
-<header class="hero">
-  <div class="hero-image">
-    <img src="photo_2026-02-11_22-45-02.jpg" alt="Study Hub Logo">
-  </div>
-  <h1>Athmaj Study Hub</h1>
-  <p>Premium Study Resources for Future Achievers</p>
+<header>
+DigitalHub Store
 </header>
 
-<nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="notes.html">Study Materials</a>
-  <a href="about.html">About</a>
-  <a href="privacy.html">Privacy</a>
-  <a href="contact.html">Contact</a>
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">Contact</a>
 </nav>
 
-<main>
+<section class="container">
 
-<section class="section">
-  <h2>Free Study Materials for +2</h2>
-  <p>
-    High-quality notes, PDFs, and exam-focused resources.
-    No login. No payment. 100% free.
-  </p>
-</section>
+<div class="card">
+<h2>PC Games</h2>
+<p>Latest premium PC games</p>
+<div class="price">₹499</div>
+<button>Buy Now</button>
+</div>
 
-<section class="section">
-  <h2>Select Your Subject</h2>
+<div class="card">
+<h2>Amazon Prime</h2>
+<p>1 Year Subscription</p>
+<div class="price">₹799</div>
+<button>Buy Now</button>
+</div>
 
-  <div class="cards">
+<div class="card">
+<h2>Canva Pro</h2>
+<p>Premium Design Access</p>
+<div class="price">₹299</div>
+<button>Buy Now</button>
+</div>
 
-    <div class="card">
-      <h3>🧪 Chemistry</h3>
-      <a href="chemistry.html">Explore</a>
-    </div>
+<div class="card">
+<h2>Netflix</h2>
+<p>Premium 4K Plan</p>
+<div class="price">₹499</div>
+<button>Buy Now</button>
+</div>
 
-    <div class="card">
-      <h3>⚡ Physics</h3>
-      <a href="physics.html">Explore</a>
-    </div>
-
-    <div class="card">
-      <h3>📐 Mathematics</h3>
-      <a href="maths.html">Explore</a>
-    </div>
-
-    <div class="card">
-      <h3>🧬 Biology</h3>
-      <a href="biology.html">Explore</a>
-    </div>
-
-  </div>
-</section>
-
-<section class="section">
-  <h2>📌 Latest Study Materials</h2>
-  <ul class="list">
-    <li><a href="chemistry.html">+2 Chemistry – Solutions Notes (New)</a></li>
-    <li><a href="physics.html">SSLC Physics – Important Questions</a></li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>Join Our Study Community</h2>
-
-  <div class="cards">
-    <div class="card">
-      <a href="https://t.me/premiumaccountsandgames" target="_blank">
-        📢 Join Telegram Channel
-      </a>
-    </div>
-
-    <div class="card">
-      <a href="https://chat.whatsapp.com/DHVP4ZP7YCoCnfO1LXUQOJ?mode=gi_t" target="_blank">
-        💬 Join WhatsApp Group
-      </a>
-    </div>
-  </div>
+<div class="card">
+<h2>YouTube Premium</h2>
+<p>Ad-Free Experience</p>
+<div class="price">₹199</div>
+<button>Buy Now</button>
+</div>
 
 </section>
-
-</main>
 
 <footer>
-  <p>© 2026 Athmaj Study Hub | Free Educational Resources</p>
-  <p>
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
-  </p>
+© 2026 DigitalHub Store | All Rights Reserved
 </footer>
-
-<div class="watermark">
-  Created by Athmaj
-</div>
 
 </body>
 </html>
